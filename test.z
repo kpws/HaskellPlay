@@ -1,0 +1,31 @@
+{
+! _a ^ _a
+}
+&
+true
+&
+! false
+&
+{
+[! _a] => _b | ( _b | ! _a )
+}
+&
+{
+[_a <=> _b] => [( _b & _a ) | (! _b & ! _a)]
+}
+&
+{
+(_a <= _b) <=> (_b => _a)
+}
+&
+A
+&
+A => ?
+&
+{
+_something is normal
+=>
+{
+(_it is _something ^ _it isn't _something)
+}
+}
